@@ -1,6 +1,6 @@
-import 'package:dino_app/Pages/LogIn.dart';
-import 'package:dino_app/Pages/SignIn.dart';
-import 'package:dino_app/Pages/TandC.dart';
+import 'package:dino_app/Pages/Home/LogIn.dart';
+import 'package:dino_app/Pages/Home/SignIn.dart';
+import 'package:dino_app/Pages/Home/TandC.dart';
 import 'package:dino_app/config/app_theme.dart';
 import 'package:flutter/material.dart';
 

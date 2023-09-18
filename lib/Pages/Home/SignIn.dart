@@ -1,4 +1,4 @@
-import 'package:dino_app/Pages/Menu.dart';
+import 'package:dino_app/Pages/Home/Rol.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter/material.dart';
 import 'package:dino_app/config/app_theme.dart';
@@ -158,7 +158,7 @@ class _SignInState extends State<SignIn> {
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Menu()));
+                      MaterialPageRoute(builder: (context) => const Rol()));
                   // Agrega aquí la lógica para registrar al usuario
                 },
                 style: ElevatedButton.styleFrom(

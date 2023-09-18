@@ -1,11 +1,12 @@
-import 'package:dino_app/Pages/EditGroup.dart';
-import 'package:dino_app/Pages/Group.dart';
-import 'package:dino_app/Pages/Home.dart';
+import 'package:dino_app/Pages/Groups/EditGroup.dart';
+import 'package:dino_app/Pages/Groups/Group.dart';
+import 'package:dino_app/Pages/Home/Home.dart';
 import 'package:dino_app/config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'Items.dart';
+import '../Widgets/NavBar.dart';
+import 'Items/Items.dart';
 
 class Menu extends StatelessWidget {
   const Menu({Key? key}) : super(key: key);
@@ -27,72 +28,7 @@ class Menu extends StatelessWidget {
             style: TextStyle(color: white, fontWeight: FontWeight.bold)),
         backgroundColor: primaryColor,
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: <Widget>[
-            Container(
-              color: primaryColor,
-              height: 56,
-              child: const Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  SizedBox(width: 10),
-                  Image(
-                    image: AssetImage('assets/Icons/chalkboard-teacher.png'),
-                    width: 40,
-                    height: 40,
-                  ),
-                  SizedBox(width: 10),
-                  Text(
-                    "Profesor",
-                    style: TextStyle(fontSize: 24, color: white),
-                  ),
-                ],
-              ),
-            ),
-            ListTile(
-              leading: const Icon(Icons.home),
-              title: const Text('Grupos',
-                  style: TextStyle(
-                    fontSize: 12,
-                  )),
-              onTap: () {
-                // Aquí puedes agregar la acción para la opción "Inicio"
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.military_tech_outlined),
-              title: const Text('Recompensas',
-                  style: TextStyle(
-                    fontSize: 12,
-                  )),
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Items()));
-                // Aquí puedes agregar la acción para la opción "Configuración"
-              },
-            ),
-            const SizedBox(
-              height: 400,
-            ),
-            ListTile(
-              leading: const Icon(
-                Icons.exit_to_app,
-                color: terciaryColor,
-              ),
-              title: const Text('Cerrar sesión',
-                  style: TextStyle(fontSize: 12, color: terciaryColor)),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            const Home())); // Aquí puedes agregar la acción para cerrar sesión
-              },
-            ),
-          ],
-        ),
-      ),
+      drawer: const NavBar(),
       body: Center(
         child: Column(children: [
           const SizedBox(
