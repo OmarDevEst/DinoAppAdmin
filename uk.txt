@@ -1,0 +1,6 @@
+Pregunta: ¿Cuál de los siguientes es un desafío de seguridad en los sistemas distribuidos?
+
+(a) La heterogeneidad de los componentes del sistema.
+(b) La necesidad de escalar el sistema para acomodar un número creciente de usuarios.
+(c) La necesidad de proteger los recursos de información contra la divulgación, la alteración y la indisponibilidad no autorizadas.
+(d) La necesidad de garantizar que los componentes del sistema funcionen correctamente.
