@@ -1,4 +1,4 @@
-import 'package:dino_app/Pages/Menu.dart';
+import 'package:dino_app/Pages/Groups/Menu.dart';
 import 'package:flutter/material.dart';
 import 'package:dino_app/config/app_theme.dart';
 
