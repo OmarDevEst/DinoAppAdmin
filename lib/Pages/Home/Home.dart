@@ -4,8 +4,33 @@ import 'package:dino_app/Pages/Home/TandC.dart';
 import 'package:dino_app/config/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+// Servicios
+import 'package:dino_app/firebase/service.dart';
+
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder(
+      future: getInstitute(),
+      builder: (((context, snapshot) {
+        return const HomePage();
+      })),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({
+    super.key,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
