@@ -18,7 +18,8 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: getTeacherGroups(),
+      future:
+          getTeacherGroups(), // TODO: Hacer el consumo del servicio dependiendo del rol
       builder: (((context, snapshot) {
         return const HomePage();
       })),
