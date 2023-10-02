@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "467827529043",
+    "firebase_url": "https://dinoapp-8e72f-default-rtdb.firebaseio.com",
+    "project_id": "dinoapp-8e72f",
+    "storage_bucket": "dinoapp-8e72f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467827529043:android:07bcf032159bf45f1b3da6",
+        "android_client_info": {
+          "package_name": "com.example.dino_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDobtP3tdWQ3AqmA0KuF1LtewKRaHe5YwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
