@@ -22,15 +22,21 @@ class NavBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 SizedBox(width: 10),
-                Image(
-                  image: AssetImage('assets/Icons/chalkboard-teacher.png'),
-                  width: 40,
-                  height: 40,
+                Icon(
+                  Icons.person,
+                  color: white,
+                  size: 40,
                 ),
                 SizedBox(width: 10),
-                Text(
-                  "Profesor",
-                  style: TextStyle(fontSize: 24, color: white),
+                Column(
+                  children: [
+                    Text(
+                      "Profesor",
+                      style: TextStyle(fontSize: 24, color: white),
+                    ),
+                    Text("   example@mail.com",
+                        style: TextStyle(fontSize: 12, color: white)),
+                  ],
                 ),
               ],
             ),

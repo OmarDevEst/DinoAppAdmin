@@ -1,4 +1,3 @@
-import 'package:dino_app/Pages/Groups/Profile.dart';
 import 'package:dino_app/config/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'dart:math';
